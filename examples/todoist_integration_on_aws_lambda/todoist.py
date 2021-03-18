@@ -26,8 +26,8 @@ def fetchTodoList():
         # print(json.dumps(todos, indent=4))
         print("Got %d todos" % len(todos))
         return todos
-    except:
-        log.exception('fetch todoist failed')
+    except Exception as e:
+        print('Fetch todoist failed:', e)
 
 def buildLayoutDocument(todos):
     # Build a JSON based on the todo list data
