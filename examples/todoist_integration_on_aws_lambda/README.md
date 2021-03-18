@@ -1,4 +1,12 @@
 
+## About Todoist & SyncSign integration
+
+This is a simple example shows how to:
+- Read data from a third party system (todoist.com here)
+- Extract the information you are going to show on [SyncSign e-Ink Displays](https://sync-sign.com/display/)
+- Fill the information into the [template](https://dev.sync-sign.com/hubsdk/guides/render_layout.html), and push it to SyncSign Cloud Server
+- Then the display node is queued to refresh the screen with the latest data
+
 ## How to Deploy this example on AWS Lambda?
 
 ### Step 1. Create the code package
@@ -13,7 +21,7 @@ zip -r ../upload.zip .
 ```
 - Then you got a "upload.zip" on upper folder
 
-### Step 2. Upload code package to AWS Lambda
+### Step 2. Upload the code package to AWS Lambda
 
 - Sign in or Create an account on the Amazon AWS: https://aws.amazon.com
 - Go to AWS Lambda dashboard, click [Create function]
