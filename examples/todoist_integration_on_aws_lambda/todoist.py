@@ -89,11 +89,15 @@ def showOnSyncSign(layoutDocument):
         print(result.errors)
     return False
 
-todos = fetchTodoList()
-if todos:
-    layoutDoc = buildLayoutDocument(todos)
-    ok = showOnSyncSign(layoutDoc)
-    if ok:
-        print('OK, Pushed %s todos to SyncSign' % len(todos))
+
+if __name__ == '__main__':
+    todos = fetchTodoList()
+    if todos:
+        layoutDoc = buildLayoutDocument(todos)
+        ok = showOnSyncSign(layoutDoc)
+        if ok:
+            print('OK, Pushed %s todos to SyncSign' % len(todos))
+        else:
+            print('Oops, failed to push to SyncSign')
     else:
-        print('Oops, failed to push to SyncSign')
+        print('Oops, failed to fetch todoist')
