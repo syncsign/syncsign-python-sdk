@@ -7,7 +7,25 @@ This is a simple example shows how to:
 - Fill the information into the [template](https://dev.sync-sign.com/hubsdk/guides/render_layout.html), and push it to SyncSign Cloud Server
 - Then the display node is queued to refresh the screen with the latest data
 
-## How to Deploy this example on AWS Lambda?
+## How to run this example on local development machine?
+
+- Run:
+
+```
+pip install syncsign
+python3 todoist.py
+```
+
+- Output example:
+```
+Got 4 todos
+Rendering on display node: 00124B001675CCAE
+Render ID: 2c6f1ec5-76c1-41c6-ad70-0e40fa328eeb
+OK, Pushed 4 todos to SyncSign
+```
+- Then it will take abount 30s to 1min to refresh the todo list on the e-paper display
+
+## How to deploy this example on AWS Lambda?
 
 ### Step 1. Create the code package
 
