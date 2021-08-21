@@ -47,7 +47,7 @@ def buildLayoutDocument(todos):
                 "data": {
                     "font": "DDIN_32",
                     "block": { "x": 8, "y": 70, "w": 392, "h": 36 },
-                    "text": ""
+                    "text": "{{TO_BE_REPLACED}}"
                 }
             }
         ]
@@ -57,7 +57,7 @@ def buildLayoutDocument(todos):
                 "data": {
                         "font": "DDIN_CONDENSED_32",
                         "block": { "x": 8, "y": 110, "w": 392, "h": 36 },
-                        "text": ""
+                        "text": "{{TO_BE_REPLACED}}"
                     }
                 }
     tpl['items'][1]['data']['text'] = datetime.now().strftime("%m/%d/%Y %H:%M")

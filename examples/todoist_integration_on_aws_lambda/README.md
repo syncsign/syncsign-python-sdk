@@ -1,5 +1,5 @@
 
-## About Todoist & SyncSign integration
+## Example: Todoist.com & SyncSign integration
 
 This is a simple example shows how to:
 - Read data from a third party system (todoist.com here)
@@ -12,7 +12,7 @@ This is a simple example shows how to:
 - Run:
 
 ```
-pip install syncsign
+pip3 install syncsign
 python3 todoist.py
 ```
 
